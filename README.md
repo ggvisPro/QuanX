@@ -1,2 +1,2 @@
 # QuanX
-QuanX JavaScript
+My Quantumult X JavaScript.
