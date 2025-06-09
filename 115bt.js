@@ -3,7 +3,7 @@
 脚本功能：该脚本无破解离线功能,只是给新版115的App添加创建离线任务的方法。
 作者：转发的,原始作者:https://raw.githubusercontent.com/ikanam/Surge-Scripts/master/115lx.js
 时间：
-
+在115打开这个链接: http://115.com/lx?taskdg=1 
 *******************************
 
 [rewrite_local]
