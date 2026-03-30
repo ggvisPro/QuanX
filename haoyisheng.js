@@ -11,7 +11,7 @@
 
 ^https?:\/\/weixin\.haoyisheng\.com\/wx\/getTestsNew url script-response-body https://raw.githubusercontent.com/ggvisPro/QuanX/main/haoyisheng.js
 
-^https?:\/\/weixin\.haoyisheng\.com\/wx\/syncQuestionAnswers url script-request-header https://raw.githubusercontent.com/ggvisPro/QuanX/main/haoyisheng.js
+^https?:\/\/weixin\.haoyisheng\.com\/wx\/syncQuestionAnswers url script-echo-response https://raw.githubusercontent.com/ggvisPro/QuanX/main/haoyisheng.js
 
 [mitm]
 hostname = weixin.haoyisheng.com
@@ -40,15 +40,13 @@ if ($response && $response.body && url.includes("getTestsNew")) {
   $notify(simple_result, result);
   $done({ body: $response.body });
 
-// 拦截提交答案请求：替换为正确答案
+// 拦截提交答案请求：替换为正确答案，用$task.fetch发送修正请求
 } else if (url.includes("syncQuestionAnswers")) {
   var saved = $prefs.valueForKey("hys_correct_answers");
   if (saved) {
     var correctAnswers = JSON.parse(saved);
-    // 从URL中提取answer参数
     var answerParam = url.split("answer=")[1];
     if (answerParam) {
-      // answer参数可能后面还有其他参数
       var ampIndex = answerParam.indexOf("&");
       if (ampIndex !== -1) {
         answerParam = answerParam.substring(0, ampIndex);
@@ -62,13 +60,34 @@ if ($response && $response.body && url.includes("getTestsNew")) {
         }
       });
 
-      // 重建URL
+      // 重建URL并用$task.fetch发送真实请求
       var newAnswerParam = encodeURIComponent(JSON.stringify(answerData));
       var baseUrl = url.split("answer=")[0];
       var newUrl = baseUrl + "answer=" + newAnswerParam;
 
-      $notify("好医生", "已自动替换为正确答案");
-      $done({ url: newUrl });
+      var reqHeaders = $request.headers;
+      reqHeaders["Content-Length"] = "0";
+
+      $task.fetch({
+        url: newUrl,
+        method: "POST",
+        headers: reqHeaders,
+        body: ""
+      }).then((resp) => {
+        $notify("好医生", "已自动替换为正确答案并提交");
+        $done({
+          status: resp.statusCode,
+          headers: resp.headers,
+          body: resp.body
+        });
+      }, (err) => {
+        $notify("好医生", "提交失败: " + err);
+        $done({
+          status: 500,
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({"status": -1, "msg": "提交失败"})
+        });
+      });
     } else {
       $done({});
     }
