@@ -43,20 +43,20 @@ if ($response && $response.body && url.includes("getTestsNew")) {
   headers["Content-Type"] = "application/x-www-form-urlencoded";
   headers["Content-Length"] = "0";
 
+  $notify("答案：" + simple_result.trim(), "", result);
+
   $task.fetch({
     url: submitUrl,
     method: "POST",
     headers: headers,
     body: ""
   }).then((resp) => {
-    $notify("好医生-自动提交", "答案：" + simple_result.trim(), resp.body);
+    $notify("好医生-自动提交成功", "答案：" + simple_result.trim(), resp.body);
+    $done({ body: $response.body });
   }, (err) => {
     $notify("好医生-提交失败", String(err));
+    $done({ body: $response.body });
   });
-
-  // 同时通知答案详情
-  $notify("答案：" + simple_result.trim(), "", result);
-  $done({ body: $response.body });
 
 // 拦截课程信息响应：标记已学习
 } else if ($response && $response.body && url.includes("getCourseInfo")) {
