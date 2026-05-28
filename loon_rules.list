@@ -21,3 +21,6 @@ DOMAIN-SUFFIX,openai.com
 
 # Gemini
 DOMAIN-SUFFIX,gemini.google.com
+
+# https://51cg1.com/
+DOMAIN-SUFFIX,hszyygf.cn
