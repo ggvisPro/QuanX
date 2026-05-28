@@ -1,0 +1,22 @@
+# My loon rules
+# update: 2026-05-28
+
+# claude
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,anthropic.com
+
+# anyrouter
+DOMAIN-SUFFIX,anyrouter.top
+
+# hdhive
+DOMAIN-SUFFIX,hdhive.com
+
+# linux Do
+DOMAIN-SUFFIX,linux.do
+
+# chatgpt
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
+
+# gemini
+DOMAIN-SUFFIX,gemini.google.com
