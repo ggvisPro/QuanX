@@ -1,0 +1,7 @@
+# Claude rules
+# update: 2026-05-29
+
+# Claude
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,anthropic.com
