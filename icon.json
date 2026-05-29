@@ -1,0 +1,10 @@
+{
+  "name": "AI icon",
+  "description": "AI icon @ggvis",
+  "icons": [
+    {
+      "name": "Claude.png",
+      "url": "https:\/\/claude.ai\/favicon.ico"
+    }
+  ]
+}
