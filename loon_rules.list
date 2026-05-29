@@ -1,5 +1,5 @@
 # My loon rules
-# update: 2026-05-28
+# update: 2026-05-30
 
 # Anyrouter
 DOMAIN-SUFFIX,anyrouter.top
@@ -20,3 +20,7 @@ DOMAIN-SUFFIX,gemini.google.com
 # https://51cg1.com
 DOMAIN-SUFFIX,51cg1.com
 DOMAIN-SUFFIX,hszyygf.cn
+
+# TMDB
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
