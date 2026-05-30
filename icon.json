@@ -2,8 +2,8 @@
   "name": "ggvis Icons",
   "description": "AI Logos @ggvisPro",
   "icons": [
-    {"name": "Claude.png",  "url": "https://raw.githubusercontent.com/ggvisPro/Quanx/main/icons/Claude.png"},
-    {"name": "ChatGPT.png", "url": "https://raw.githubusercontent.com/ggvisPro/Quanx/main/icons/ChatGPT.png"},
-    {"name": "Gemini.png",  "url": "https://raw.githubusercontent.com/ggvisPro/Quanx/main/icons/Gemini.png"}
+    {"name": "Claude.png",  "url": "https://cdn.jsdelivr.net/gh/ggvisPro/QuanX@main/icons/Claude.png"},
+    {"name": "ChatGPT.png", "url": "https://cdn.jsdelivr.net/gh/ggvisPro/QuanX@main/icons/ChatGPT.png"},
+    {"name": "Gemini.png",  "url": "https://cdn.jsdelivr.net/gh/ggvisPro/QuanX@main/icons/Gemini.png"}
   ]
 }
