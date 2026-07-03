@@ -1,0 +1,8 @@
+# ChatGPT rules
+# update: 2026-07-03
+
+# ChatGPT 
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-KEYWORD,chatgpt
+DOMAIN-KEYWORD,openai
