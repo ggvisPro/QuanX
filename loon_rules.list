@@ -1,5 +1,5 @@
 # My loon rules
-# update: 2026-05-30
+# update: 2026-07-03
 
 # Anyrouter
 DOMAIN-SUFFIX,anyrouter.top
@@ -9,13 +9,6 @@ DOMAIN-SUFFIX,hdhive.com
 
 # Linux Do
 DOMAIN-SUFFIX,linux.do
-
-# ChatGPT
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,openai.com
-
-# Gemini
-DOMAIN-SUFFIX,gemini.google.com
 
 # https://51cg1.com
 DOMAIN-SUFFIX,51cg1.com
