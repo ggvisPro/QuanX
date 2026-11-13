@@ -20,3 +20,7 @@ DOMAIN-SUFFIX,syjiaotong.mobi
 # TMDB
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
+
+# POE
+DOMAIN-SUFFIX,poe.com
+DOMAIN-KEYWORD,poe
