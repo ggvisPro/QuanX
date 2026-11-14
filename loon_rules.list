@@ -24,3 +24,7 @@ DOMAIN-SUFFIX,tmdb.org
 # POE
 DOMAIN-SUFFIX,poe.com
 DOMAIN-KEYWORD,poe
+
+# google
+DOMAIN-SUFFIX,google.com
+DOMAIN-KEYWORD,google
