@@ -28,3 +28,8 @@ DOMAIN-KEYWORD,poe
 # google
 DOMAIN-SUFFIX,google.com
 DOMAIN-KEYWORD,google
+
+# gork+cursor
+DOMAIN-KEYWORD,gork
+DOMAIN-KEYWORD,cursor
+
