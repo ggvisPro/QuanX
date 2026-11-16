@@ -25,10 +25,6 @@ DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,poe.com
 DOMAIN-KEYWORD,poe
 
-# google
-DOMAIN-SUFFIX,google.com
-DOMAIN-KEYWORD,google
-
 # gork+cursor
 DOMAIN-KEYWORD,gork
 DOMAIN-KEYWORD,cursor
