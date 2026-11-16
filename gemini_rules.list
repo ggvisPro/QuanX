@@ -3,3 +3,7 @@
 
 # Gemini
 DOMAIN-SUFFIX,gemini.google.com
+
+# google
+DOMAIN-SUFFIX,google.com
+DOMAIN-KEYWORD,google
