@@ -1,3 +1,14 @@
+/*******************************
+
+[rewrite_local]
+^https:\/\/one\.google\.com\/ai\?.* url script-response-body https://raw.githubusercontent.com/ggvisPro/QuanX/refs/heads/main/one_google.js
+
+
+[mitm] 
+hostname = one.google.com
+
+*******************************/
+
 let body = $response.body;
 if (body) {
   body = body
