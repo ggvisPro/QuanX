@@ -8,7 +8,6 @@ DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,alibaba-inc.com
 DOMAIN-SUFFIX,aliway.com
 DOMAIN-SUFFIX,antfin.com
-
 DOMAIN-KEYWORD,dingtalk
 DOMAIN-KEYWORD,qoder
 DOMAIN-KEYWORD,aliyuncs
@@ -20,3 +19,7 @@ DOMAIN-KEYWORD,alibaba
 DOMAIN-KEYWORD,qwen
 DOMAIN-KEYWORD,qianwen
 DOMAIN-KEYWORD,odps
+
+# apple iMessage
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,ess.apple.com
